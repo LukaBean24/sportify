@@ -1,0 +1,25 @@
+@import './variables';
+
+.sidebar {
+  width: 200px;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  background-color: $yellow;
+  transition: 0.2s ease;
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr;
+}
+
+.closed {
+  width: 0;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  background-color: $yellow;
+  transition: 0.2s ease;
+
+  & span {
+    display: none;
+  }
+}
